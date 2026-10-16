@@ -23,7 +23,7 @@ public class DisplayController : MonoBehaviour
 		
         dropdownResolucion.ClearOptions(); // elimina las opciones que ya hay en el menu
 
-        HashSet<string> resolucionesUnicas = new HashSet<string>();
+        HashSet<string> resolucionesUnicas = new HashSet<string>(); // guarda los nombres de las resoluciones ya añadidas.
         foreach (Resolution resolucion in resoluciones) // 
 		{
             string nombreResolucion = resolucion.width + " x " + resolucion.height;
